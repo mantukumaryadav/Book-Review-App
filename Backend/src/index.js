@@ -22,7 +22,7 @@ app.use(cors());//we use this because our localhost id is diff in frontend
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 //     allowedHeaders: ['Content-Type']
 // }))
-app.use(urlencoded({ extended: false }));//if we dont use this our body will not be readed
+// app.use(urlencoded({ extended: false })); //if we dont use this our body will not be readed
 //connection 
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
